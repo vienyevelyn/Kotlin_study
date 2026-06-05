@@ -13,4 +13,13 @@ fun main(){
         "Transaksi valid. Harga : Rp$price, tax: $tax"
     } ?: "Transaksi Invalid"
 
+    println("=== TEST SAFE CASTING ===")
+    val mixedData : List<Any> = listOf(
+        "Smartphone",
+        1500000,
+        UserProfile("Andi", null)
+        "Laptop",
+        450000.0
+    )
+
 }
